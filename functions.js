@@ -21,31 +21,30 @@ function show(id) {
     }
 }
 
-function showHome() {
+function hideAllPages() {
+    hide("home");
     hide("skills");
     hide("projects");
     hide("languages");
+}
+
+function showHome() {
+    hideAllPages();
     show("home");
 }
 
 function showSkills() {
-    hide("home");
-    hide("projects");
-    hide("languages");
+    hideAllPages();
     show("skills");
 }
 
 function showProjects() {
-    hide("home");
-    hide("skills");
-    hide("languages");
+    hideAllPages();
     show("projects");
 }
 
 function showLanguages() {
-    hide("home");
-    hide("skills");
-    hide("projects");
+    hideAllPages();
     show("languages");
 }
 

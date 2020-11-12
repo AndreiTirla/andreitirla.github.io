@@ -49,7 +49,6 @@ footer {
     text-align: center;
 }
 
-
 #header-media {
     text-align: center;
     background-color: #334455;
@@ -107,8 +106,10 @@ body {
 
 #top-menu-bar a {
     text-decoration: none;
-    padding: 0 15px;
+    padding: 5px 15px;
+    margin: 2px 0;
     color: #fff;
+    display:inline-block;
 }
 
 #top-menu-bar a:visited { color: #fff;}

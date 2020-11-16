@@ -12,13 +12,9 @@ function hide(id) {
 
 function show(id) {
     var elm = document.getElementById(id);
-    console.log("show:" + id);
-
-    if(elm) {
-        elm.style.display = "";
-    } else {
-        console.error("Elementul nu exista!");
-    }
+    // console.log("show:" + id);
+    elm.style.display = "";
+    
 }
 
 function hideAllPages() {
@@ -26,7 +22,7 @@ function hideAllPages() {
 // for (initializare; conditie; post execute)
     for(var i = 0; i < pages.length; i++) {
         var id= pages[i].id;
-        console.info("i=", i, pages[i]);
+        // console.info("i=", i, pages[i]);
         hide(id);
     }
 }

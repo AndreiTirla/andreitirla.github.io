@@ -70,15 +70,15 @@ footer {
 
 .info-page {
     margin: 10px 100px;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
-    padding: 24px;
+    padding: 50px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
     border-radius: 2px;
 }
 
 .main-photo img:first-child {
-    width: 152px;
+    width: 102px;
     border-radius: 50%;
 }
 
@@ -88,11 +88,12 @@ body {
 
 #job-title {
     color: rgb(6, 6, 14); 
-    text-align: center;
+    text-align: left;
 }
 
 
 #top-menu-bar {
+    margin: 0px;
     text-align: center;
     background-color: #334455;
     color: #fff;
@@ -118,6 +119,11 @@ body {
     background: #fff;
 }
 
+#logo {
+    width: 20px;
+    align-items: center;
+}
+
 .page {
     margin: 10px 100px;
     background-color: #fff;
@@ -136,9 +142,9 @@ li {
 
 .favorite {
     color: black;
-    font-style: italic;
-    margin: 5px 6px;
-    padding: 7px;
+    font-style: normal;
+    margin: 1px;
+    padding: 3px;
 
 }
 

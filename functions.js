@@ -35,20 +35,3 @@ function showPage(pageId) {
     hideAllPages();
     show(pageId);
 }
-
-function showHome() {
-    showPage("home");
-}
-
-function showSkills() {
-    showPage("skills");
-}
-
-function showProjects() {
-    showPage("projects");
-}
-
-function showLanguages() {
-    showPage("languages");
-}
-

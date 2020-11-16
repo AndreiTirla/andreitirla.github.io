@@ -95,7 +95,7 @@ body {
 #top-menu-bar {
     margin: 0px;
     text-align: center;
-    background-color: #334455;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -108,7 +108,7 @@ body {
 #top-menu-bar a {
     text-decoration: none;
     padding: 5px 15px;
-    margin: 2px 0;
+    margin: 0;
     color: #fff;
     display:inline-block;
 }

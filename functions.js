@@ -31,23 +31,24 @@ function hideAllPages() {
     }
 }
 
-function showHome() {
+function showPage(pageId) {
     hideAllPages();
-    show("home");
+    show(pageId);
+}
+
+function showHome() {
+    showPage("home");
 }
 
 function showSkills() {
-    hideAllPages();
-    show("skills");
+    showPage("skills");
 }
 
 function showProjects() {
-    hideAllPages();
-    show("projects");
+    showPage("projects");
 }
 
 function showLanguages() {
-    hideAllPages();
-    show("languages");
+    showPage("languages");
 }
 

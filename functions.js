@@ -41,10 +41,18 @@ initMenu();
 
 showPage("skills");
 
-var skills = ["HTML", "CSS", "JS"];
+var skills = [
+    "html", 
+    "CSS", 
+    "JS"
+];
+
+var skillsLi = skills.map(function(skill){
+    return "<li>" + skill.toUpperCase() + "</li>";
+});
+
+
 
 //TODO add "favorite" skill
 var ul = document.querySelector("#skills ul");
-ul.innerHTML = "<li>" + skills[0] + "</li>" + 
-               "<li>" + skills[1] + "</li>" + 
-               "<li>" + skills[2] + "</li>";
+ul.innerHTML = skillsLi.join("");

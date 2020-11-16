@@ -1,7 +1,5 @@
 function hide(id) {
-    // document.getElementById(id).style.display = "none";
     var el = document.getElementById(id);
-    // console.log("hide:" + id, el);
     
     if(el) {
         el.style.display = "none";
@@ -12,17 +10,14 @@ function hide(id) {
 
 function show(id) {
     var elm = document.getElementById(id);
-    // console.log("show:" + id);
-    elm.style.display = "";
-    
+    elm.style.display = ""; 
 }
 
 function hideAllPages() {
     var pages = document.querySelectorAll(".page");
-// for (initializare; conditie; post execute)
+   
     for(var i = 0; i < pages.length; i++) {
         var id= pages[i].id;
-        // console.info("i=", i, pages[i]);
         hide(id);
     }
 }

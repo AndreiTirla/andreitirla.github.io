@@ -8,19 +8,19 @@
 
 <body>
     <header>
-        <div>
-            <div class="info-page">
-                <div class="main-photo">
-                    <img src="15.jpg" width="152" alt="AndreiPic">
-                </div>
+        <div id="header-wraper">
+            <div id="my-picture">
+                <img src="15.jpg" alt="AndreiPic">
+            </div>
 
-                <h1>CV Tirla Andrei</h1>
-                <h3 id="job-title">Absolvent & Student & <span>FastTrackIT</span></h3>
-                <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque facilis non exercitationem ipsa,
-                    ipsam
-                    nulla</p>
+            <div id="header-info">
+                <h1>Tirla Andrei</h1>
+                <h2 id="job-title">Student @<a href="https://fasttrackit.org/" target="_blank">FastTrackIT</a></h2>
+                <p>“Love all, trust a few, do wrong to none.”</p> 
+                <span>William Shakespeare</span>
             </div>
         </div>
+
         <ul id="top-menu-bar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Skills</a></li>
@@ -36,8 +36,10 @@
                 <div class="container">
                     <form action="">
                         <label for="e">Contact me</label>
+                        <br>
                         <input type="email" id="e" name="em" placeholder="Email:">
                         <input type="text" id="name" name="nume" placeholder="Your name:">
+                        <br>
                         <button>
                             Submit
                         </button>
@@ -59,7 +61,7 @@
             <div id="skills" class="page" style="display: none;">
                 <h2>Skills & Endorsments</h2>
                 <ul>
-                    
+
                 </ul>
             </div>
 
@@ -92,13 +94,10 @@
     </section>
 
     <footer>
-        <ul id="top-menu-bar">
-            <li><img id="logo" src="logoFB.png"><a target="_blank"
-                    href="https://www.facebook.com/andrei.tirla16/">Facebook</a></li>
-            |
-            <li><img id="logo" src="logoLI.png"><a target="_blank"
-                    href="https://www.linkedin.com/in/andrei-tirla-23a3191a3/">LinkedIn</a></li>
-        </ul>
+        <img id="logo" src="logoFB.png"><a href="https://www.facebook.com/andrei.tirla16/" target="_blank">Facebook</a>
+        |
+        <img id="logo" src="logoLI.png"><a href="https://www.linkedin.com/in/andrei-tirla-23a3191a3/"
+            target="_blank">LinkedIn</a>
     </footer>
 
     <script src="functions.js"></script>

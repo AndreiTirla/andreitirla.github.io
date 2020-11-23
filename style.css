@@ -143,12 +143,17 @@ body {
     border-radius: 2px;
 }
 
-li {
-    color: black;
-}
-
 .page > h2 {
     margin-top: 0px;
+}
+
+#skills li {
+    font-weight: 800;
+}
+
+#skills li span{
+    font-weight: 200;
+    color:gray;
 }
 
 .favorite {

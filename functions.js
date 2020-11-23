@@ -44,13 +44,14 @@ initMenu();
 showPage(activePage);
 
 var skills = [
-    "html", 
-    "CSS", 
-    "JS"
+    { name: "HTML", endorsements: 15 }, 
+    { name: "CSS", endorsements: 5 }, 
+    { name: "JS", endorsements:21 }
 ];
 
 var skillsLi = skills.map(function(skill){
-    return "<li>" + skill.toUpperCase() + "</li>";
+    var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
+    return "<li>" + skill.name + endorsements + "</li>";
 });
 
 

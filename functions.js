@@ -1,3 +1,5 @@
+var activePage= "skills";
+
 function hide(id) {
     var el = document.getElementById(id);
     
@@ -13,18 +15,14 @@ function show(id) {
     elm.style.display = ""; 
 }
 
-function hideAllPages() {
-    var pages = document.querySelectorAll(".page");
-   
-    for(var i = 0; i < pages.length; i++) {
-        var id= pages[i].id;
-        hide(id);
-    }
+function hidePreviousPage() {
+    hide(activePage);
 }
 
 function showPage(pageId) {
-    hideAllPages();
+    hidePreviousPage();
     show(pageId);
+    activePage = pageId;
 }
 
 function initMenu() {
@@ -39,7 +37,7 @@ function initMenu() {
 
 initMenu();
 
-showPage("skills");
+showPage(activePage);
 
 var skills = [
     "html", 

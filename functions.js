@@ -59,5 +59,4 @@ fetch("data/skills.json").then(function(r) {
 }).then(function(allSkills) {
     showSkills(allSkills);
 });
-// showSkills(allSkills);
 

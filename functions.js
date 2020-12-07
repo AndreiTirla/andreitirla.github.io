@@ -56,9 +56,10 @@ function sortSkills(skills) {
 }
 
 function getHTMLSkills(skills) {
-    var skillsLi = skills.map(function (skill) {
-        var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
-        return "<li>" + skill.name + endorsements + "</li>";
+    var skillsLi = skills.map(function(skill) {
+        return `<li class = "${skill.endorsements > 9 ? "favorite" : ""}"> 
+        ${skill.name} <span>&middot; ${skill.endorsements} 
+        </span> </li>`;
     });
     return skillsLi.join("");
 }

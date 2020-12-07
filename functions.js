@@ -55,15 +55,20 @@ function sortSkills(skills) {
     })
 }
 
-function showSkills(skills) {
+function getHTMLSkills(skills) {
     var skillsLi = skills.map(function (skill) {
         var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
         return "<li>" + skill.name + endorsements + "</li>";
     });
+    return skillsLi.join("");
+}
+
+function showSkills(skills) {
+    var html = getHTMLSkills(skills);
 
     //TODO add "favorite" skill
     var ul = document.querySelector("#skills ul");
-    ul.innerHTML = skillsLi.join("");
+    ul.innerHTML = html;
 }
 
 fetch("data/skills.json")

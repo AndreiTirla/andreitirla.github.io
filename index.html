@@ -4,6 +4,8 @@
 <head>
     <title>TirlaAndreiCV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,12 +14,16 @@
             <div id="my-picture">
                 <img src="15.jpg" alt="AndreiPic">
             </div>
-
             <div id="header-info">
                 <h1>Tirla Andrei</h1>
                 <h2 id="job-title">Student @<a href="https://fasttrackit.org/" target="_blank">FastTrackIT</a></h2>
-                <p>“Love all, trust a few, do wrong to none.”</p> 
-                <span>William Shakespeare</span>
+                <!-- <p>“Love all, trust a few, do wrong to none.”</p>
+                <span>William Shakespeare</span> -->
+            </div>
+            <div id="gradient">
+                <input class="color1" type="color" name="color1" value="#ddc0c0">
+                <input class="color2" type="color" name="color2" value="#9198e5">
+                <h5></h5>
             </div>
         </div>
 
@@ -32,24 +38,15 @@
 
     <section id="content">
         <div id="side-menu">
-            <section>
-                <div class="container">
-                    <form action="">
-                        <label for="e">Contact me</label>
-                        <br>
-                        <input type="email" id="e" name="em" placeholder="Email:">
-                        <input type="text" id="name" name="nume" placeholder="Your name:">
-                        <br>
-                        <button>
-                            Submit
-                        </button>
-                    </form>
-                </div>
-            </section>
-            <section>
-
-            </section>
-
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>"Lucian Blaga" University of Sibiu.
+                        Bachelor's degree, Management
+                        2017-2020
+                    </li>
+                </ul>     
+            </div>
         </div>
         <div id="main">
 
@@ -94,10 +91,11 @@
     </section>
 
     <footer>
-        <img id="logo" src="logoFB.png"><a href="https://www.facebook.com/andrei.tirla16/" target="_blank">Facebook</a>
-        |
-        <img id="logo" src="logoLI.png"><a href="https://www.linkedin.com/in/andrei-tirla-23a3191a3/"
-            target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/andrei.tirla16/" target="_blank"> <img id="logo" src="logoFB.svg" /></a>
+        <a href="https://www.linkedin.com/in/andrei-tirla-23a3191a3/" target="_blank"><img id="logo"
+                src="logoLI.svg" /></a>
+        <a href="https://www.instagram.com/andreitirla/" target="_blank"><img id="logo"
+                    src="logoIG.svg" /></a>
     </footer>
 
     <script src="functions.js"></script>

@@ -43,18 +43,6 @@ initMenu();
 
 showPage(activePage);
 
-function sortSkills(skills) {
-    skills.sort(function (first, second) {
-        if (first.endorsements < second.endorsements) {
-            return 1;
-        }
-        if (first.endorsements > second.endorsements) {
-            return -1;
-        }
-        return 0
-    })
-}
-
 function getHTMLSkills(skills) {
     var skillsLi = skills.map(function(skill) {
         return `<li class = "${skill.endorsements > 9 ? "favorite" : ""}"> 
@@ -65,11 +53,8 @@ function getHTMLSkills(skills) {
 }
 
 function showSkills(skills) {
-    var html = getHTMLSkills(skills);
-
-    //TODO add "favorite" skill
     var ul = document.querySelector("#skills ul");
-    ul.innerHTML = html;
+    ul.innerHTML = getHTMLSkills(skills);;
 }
 
 fetch("data/skills.json")
@@ -77,7 +62,11 @@ fetch("data/skills.json")
         return r.json();
     })
     .then(function (allSkills) {
-        sortSkills(allSkills)
+        allSkills.sort(function(s1, s2){
+            return s2.endorsements - s1.endorsements;
+            // return s1.name < s2.name ? -1 : 0;
+        });
+
         showSkills(allSkills)
     });
 
